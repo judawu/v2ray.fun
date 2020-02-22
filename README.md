@@ -46,7 +46,7 @@ bash -c "$(curl -fsSL https://github.com/judawu/v2ray.fun/blob/master/uninstall.
 - CentOS 7
 
 ## 致谢
-
+V2ray : https://v2ray.com
 上游原作者[雨落无声](https://github.com/YLWS-4617)
 上游作者 v2ray.fun(https://github.com/v2ray-fun/ )
 
