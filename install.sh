@@ -40,7 +40,7 @@ curl  https://get.acme.sh | sh
 # 克隆V2ray.fun项目
 cd /usr/local/
 rm -R v2ray.fun
-git clone https://github.com/juda/v2ray.fun
+git clone https://github.com/judawu/v2ray.fun
 
 # 安装V2ray主程序
 bash <(curl -L -s https://install.direct/go.sh)
@@ -55,8 +55,8 @@ let PORT=$RANDOM+10000
 UUID=$(cat /proc/sys/kernel/random/uuid)
 sed -i "s/cc4f8d5b-967b-4557-a4b6-bde92965bc27/${UUID}/g" /etc/v2ray/config.json
 sed -i "s/12345/${PORT}/g" "/etc/v2ray/config.json"
-python /usr/local/v2ray.fun/genclient.py
-python /usr/local/v2ray.fun/openport.py
+python3 /usr/local/v2ray.fun/genclient.py
+python3 /usr/local/v2ray.fun/openport.py
 service v2ray restart
 
 # auto open port after start
@@ -64,7 +64,7 @@ service v2ray restart
 cat /etc/rc.local | grep openport.py
 if [[ $? -ne 0 ]]; then
 cat>>/etc/rc.local<<EOF
-python /usr/local/v2ray.fun/openport.py
+python3 /usr/local/v2ray.fun/openport.py
 EOF
 chmod a+x /etc/rc.local
 fi
