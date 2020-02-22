@@ -41,13 +41,13 @@ chmod +x /usr/local/bin/v2ray
 bash <(curl -L -s https://install.direct/go.sh)
 
 # 初始化环境
-python /usr/local/v2ray.fun/openport.py
+python3 /usr/local/v2ray.fun/openport.py
 service v2ray restart
 
 cat /etc/rc.local | grep openport.py
 if [[ $? -ne 0 ]]; then
 cat>>/etc/rc.local<<EOF
-python /usr/local/v2ray.fun/openport.py
+python3 /usr/local/v2ray.fun/openport.py
 EOF
 chmod a+x /etc/rc.local
 fi
