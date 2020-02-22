@@ -48,7 +48,7 @@ bash -c "$(curl -fsSL https://git.io/fhQ97)"
 ## 致谢
 
 上游原作者[雨落无声](https://github.com/YLWS-4617)
-上游作者 v2ray.fun (https://github.com/v2ray.fun )
+上游作者 v2ray.fun(https://github.com/v2ray-fun/ )
 
 本 Fork 的作者与贡献者
 
