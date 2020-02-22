@@ -23,17 +23,17 @@ V2ray 控制脚本，向导式更改端口，加密方式，传输协议，享�
 ## 安装命令
 
 ```bash
-bash -c "$(curl -fsSL https://git.io/fhQ99)"
+bash -c "$(curl -fsS Lhttps://github.com/judawu/v2ray.fun/blob/master/install.sh)"
 ```
 
 ## 升级命令
 ```bash
-bash -c "$(curl -fsSL https://git.io/fhQ9Q)"
+bash -c "$(curl -fsSL https://github.com/judawu/v2ray.fun/blob/master/upgrade.sh)"
 ```
 
 ## 卸载命令
 ```bash
-bash -c "$(curl -fsSL https://git.io/fhQ97)"
+bash -c "$(curl -fsSL https://github.com/judawu/v2ray.fun/blob/master/uninstall.sh)"
 ```
 
 
